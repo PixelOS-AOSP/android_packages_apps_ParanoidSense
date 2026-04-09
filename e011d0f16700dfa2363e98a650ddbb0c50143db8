@@ -33,6 +33,23 @@
       "message": "no",
       "revId": "e011d0f16700dfa2363e98a650ddbb0c50143db8",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8019a030_1192de4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000008
+      },
+      "writtenOn": "2026-04-09T03:58:06Z",
+      "side": 1,
+      "message": "Refer to https://review.pixelos.net/c/PixelOS-AOSP/android_hardware_xiaomi/+/1080 compat should be forked",
+      "revId": "e011d0f16700dfa2363e98a650ddbb0c50143db8",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
