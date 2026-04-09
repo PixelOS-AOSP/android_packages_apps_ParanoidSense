@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7d89299_05d1b60b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-04-09T02:57:01Z",
+      "side": 1,
+      "message": "Required after https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/479915",
+      "revId": "e011d0f16700dfa2363e98a650ddbb0c50143db8",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
