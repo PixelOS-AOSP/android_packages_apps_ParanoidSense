@@ -220,7 +220,7 @@ open class EnrollActivity : FaceBaseActivity() {
         }
         if (mToken != null && mToken!!.isNotEmpty()) {
             mFaceManager!!.enroll(
-                Util.getUserId(this),
+                mUserId,
                 mToken,
                 mEnrollmentCancel,
                 mEnrollmentCallback,
