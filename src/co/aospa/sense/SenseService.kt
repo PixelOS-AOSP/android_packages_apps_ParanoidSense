@@ -42,6 +42,7 @@ class SenseService : Service() {
     private var mPreferenceHelper: PreferenceHelper? = null
     private var mService: SenseServiceWrapper? = null
     private var mVendorImpl: Vendor? = null
+    private var mIsVendorInit = false
     private var mCameraId = 0
     private var mChallengeCount = 0
     private var mUserId = 0
@@ -256,8 +257,8 @@ class SenseService : Service() {
         mPreferenceHelper = PreferenceHelper(this)
         mVendorImpl = VendorImpl(this)
         mUserId = Util.getUserId(this)
-        if (!Util.isFaceUnlockDisabledByDPM(this) && Util.isFaceUnlockEnrolled(this)) {
-            mWorkHandler!!.post { mVendorImpl!!.init() }
+        mWorkHandler!!.post {
+            initVendor()
         }
         mAlarmManager = getSystemService(AlarmManager::class.java)
         mIdleTimeoutIntent = PendingIntent.getBroadcast(
@@ -289,6 +290,14 @@ class SenseService : Service() {
         }
         mVendorImpl!!.release()
         unregisterReceiver(mReceiver)
+    }
+
+    private fun initVendor() {
+        if (mIsVendorInit || Util.isFaceUnlockDisabledByDPM(this)) {
+            return
+        }
+        mVendorImpl!!.init()
+        mIsVendorInit = true
     }
 
     private fun onAuthenticated() {
