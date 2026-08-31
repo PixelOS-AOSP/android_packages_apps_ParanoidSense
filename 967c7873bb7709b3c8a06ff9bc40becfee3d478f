@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91f2f245_b94ac4fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000014
+      },
+      "writtenOn": "2026-08-31T19:41:52Z",
+      "side": 1,
+      "message": "Fixes face unlock in private space on sunny.",
+      "revId": "967c7873bb7709b3c8a06ff9bc40becfee3d478f",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
