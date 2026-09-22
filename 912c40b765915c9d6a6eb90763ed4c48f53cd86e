@@ -16,6 +16,24 @@
       "message": "why?",
       "revId": "912c40b765915c9d6a6eb90763ed4c48f53cd86e",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f19afb73_e87e3642",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-09-22T15:02:00Z",
+      "side": 1,
+      "message": "https://source.android.com/docs/core/architecture/partitions/shared-system-image#sys-ext-partition",
+      "parentUuid": "ff158b2f_4a1acbe6",
+      "revId": "912c40b765915c9d6a6eb90763ed4c48f53cd86e",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
